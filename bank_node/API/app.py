@@ -22,7 +22,7 @@ def connect():
 
     global ml_host
     global ml_port
-    ml_host = credentials["mlhost"]
+    ml_host = credentials["ml_host"]
     ml_port = credentials["mlport"]
 
     return Savoir(rpcuser, rpcpasswd, rpchost, rpcport, chainname)
