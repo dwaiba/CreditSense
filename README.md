@@ -38,7 +38,7 @@ The solution has 4 layers which includes:
 ###### Create the Master-Machine Learning Node
 1. In the Azure Portal allow go to the deployed virtual machine and ssh into the machine by clicking on connect and running the ssh command `ssh username@IP`. Enter the VM password during the setup and after successful login you should see `Welcome to Ubuntu 17.10 (GNU/Linux 4.13.0-37-generic x86_64)`
 
-2. Create the Machine Learning Master Node and set up a fresh Blockchain network by running the command: `curl -s https://raw.githubusercontent.com/piy0999/CreditSense/master/bank_node/setup_master.sh | bash /dev/stdin`
+2. Create the Machine Learning Master Node and set up a fresh Blockchain network by running the command: `curl -s https://raw.githubusercontent.com/dwaiba/CreditSense/master/bank_node/setup_master.sh | bash /dev/stdin`
 
 3. Enter OK whenever prompted by Ubuntu and the installation using shell script should begin which takes around 4 minutes. 
 
@@ -69,7 +69,7 @@ In the Azure Portal allow go to the deployed virtual machine and ssh into the ma
 
 4. Create another port rule by clicking Add inbound port rule and inside the inbound port rule dialog type in port_ranges <b> Blockchain Port </b> found during the process of creating Master ML Node (This allows the connection with blockchain)
 
-5. To join existing network, get IP address (IP address is the IP address of the Virtual Machine running the Master-ML Node) and port (Port is the <b> Blockchain Port </b> found during the process of creating Master ML Node) , run the following command by replacing the IP and PORT as specified above. `curl -s https://raw.githubusercontent.com/piy0999/CreditSense/master/bank_node/setup_node.sh | bash /dev/stdin IP:PORT`
+5. To join existing network, get IP address (IP address is the IP address of the Virtual Machine running the Master-ML Node) and port (Port is the <b> Blockchain Port </b> found during the process of creating Master ML Node) , run the following command by replacing the IP and PORT as specified above. `curl -s https://raw.githubusercontent.com/dwaiba/CreditSense/master/bank_node/setup_node.sh | bash /dev/stdin IP:PORT`
 
 6. Enter OK whenever prompted by Ubuntu and the installation using shell script should begin which takes around 4 minutes.
 
