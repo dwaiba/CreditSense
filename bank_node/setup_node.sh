@@ -3,7 +3,7 @@ export LC_ALL="en_US.UTF-8"
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 sudo dpkg-reconfigure locales
 echo '2. Cloning github...'
-git clone http://github.com/piy0999/CreditSense.git
+git clone http://github.com/dwaiba/CreditSense.git
 cd ~/CreditSense
 git config credential.helper store
 cd ~
